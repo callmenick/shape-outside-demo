@@ -1,0 +1,24 @@
+/* -----------------------------------------------------------------------------
+
+  Elements - Text
+
+----------------------------------------------------------------------------- */
+
+a {
+  color: $color-theme-main;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-theme-dark;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+}

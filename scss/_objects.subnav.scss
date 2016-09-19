@@ -1,0 +1,37 @@
+/* -----------------------------------------------------------------------------
+
+  Objects - Sub Nav
+
+----------------------------------------------------------------------------- */
+
+.SubNav {
+  margin: 0;
+  padding: 0;
+}
+
+.SubNav-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.SubNav-item {
+  margin: 0;
+  padding: map-get($gutter, xs);
+}
+
+.SubNav-link {
+  display: block;
+  margin: 0;
+  padding: map-get($gutter, xs) map-get($gutter, xl);
+  border: solid 0.2rem $color-theme-main;
+}
+
+.SubNav-link:hover,
+.SubNav-item.active .SubNav-link {
+  color: #fff;
+  background-color: $color-theme-dark;
+}

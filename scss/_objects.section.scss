@@ -1,0 +1,17 @@
+/* -----------------------------------------------------------------------------
+
+  Objects - Section
+
+----------------------------------------------------------------------------- */
+
+.Section {
+  margin-bottom: map-get($gutter, xl);
+
+  @include break(md) {
+    margin-bottom: map-get($gutter, xx);
+  }
+}
+
+.Section:last-child {
+  margin-bottom: 0;
+}

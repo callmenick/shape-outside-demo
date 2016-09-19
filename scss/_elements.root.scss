@@ -1,0 +1,17 @@
+/* -----------------------------------------------------------------------------
+
+  Elements - Root
+
+----------------------------------------------------------------------------- */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: $color-neutral-2;
+  background-color: #fff;
+  font-family: $font-primary;
+  font-size: map-get($font-size, sm);
+  line-height: map-get($line-height, md);
+}

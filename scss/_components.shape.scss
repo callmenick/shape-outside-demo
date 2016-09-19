@@ -1,0 +1,43 @@
+/* -----------------------------------------------------------------------------
+
+  Components - Shape
+
+----------------------------------------------------------------------------- */
+
+.Shape {
+  display: block;
+  margin-bottom: map-get($gutter, lg);
+  width: 18rem;
+  height: 18rem;
+  background-color: #eee;
+
+  @include break(sm) {
+    width: 24rem;
+    height: 24rem;
+  }
+}
+
+.Shape--left {
+  float: left;
+  margin-right: map-get($gutter, xx);
+}
+
+.Shape--right {
+  float: right;
+  margin-left: map-get($gutter, xx);
+}
+
+.Shape--circle {
+  border-radius: 50%;
+  shape-outside: circle();
+}
+
+.Shape--triangle {
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  shape-outside: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.Shape--diamond {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}

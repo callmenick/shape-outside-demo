@@ -1,0 +1,18 @@
+/* -----------------------------------------------------------------------------
+
+  Objects - Footer
+
+----------------------------------------------------------------------------- */
+
+.Footer {
+  padding: map-get($gutter, sm) 0;
+  text-align: center;
+
+  @include break(sm) {
+    padding: map-get($gutter, md) 0;
+  }
+
+  @include break(md) {
+    padding: map-get($gutter, lg) 0;
+  }
+}

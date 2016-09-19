@@ -1,0 +1,39 @@
+/* -----------------------------------------------------------------------------
+
+  Objects - Content
+
+----------------------------------------------------------------------------- */
+
+.Content {
+  margin-bottom: map-get($gutter, xx)*2;
+  clear: both;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: map-get($gutter, lg);
+    font-weight: 300;
+
+    @include break(md) {
+      font-size: map-get($font-size, xl);
+    }
+  }
+
+  p {
+    margin-bottom: map-get($gutter, xx);
+
+    @include break(md) {
+      font-size: map-get($font-size, lg);
+    }
+
+    @include break(lg) {
+      text-align: justify;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

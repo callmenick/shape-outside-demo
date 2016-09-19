@@ -1,0 +1,40 @@
+/* -----------------------------------------------------------------------------
+
+  Objects - Header
+
+----------------------------------------------------------------------------- */
+
+.Header {
+  margin: 0;
+  padding: 0;
+}
+
+.Header-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-theme-main;
+}
+
+.Header-nav-link {
+  padding: map-get($gutter, md);
+  color: #fff;
+}
+
+.Header-nav-link:hover {
+  color: #fff;
+  background-color: $color-theme-dark;
+}
+
+.Header-title {
+  margin: map-get($gutter, xl);
+  padding: 0;
+  color: $color-neutral-3;
+  font-size: map-get($font-size, xl);
+  font-weight: 300;
+  text-align: center;
+
+  @include break(sm) {
+    margin: map-get($gutter, xx);
+    font-size: map-get($font-size, xx);
+  }
+}

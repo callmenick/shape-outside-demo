@@ -1,0 +1,54 @@
+/* -----------------------------------------------------------------------------
+
+  Component - Carbon Ad
+
+----------------------------------------------------------------------------- */
+
+#carbonads {
+  position: fixed;
+  right: map-get($gutter, md);
+  bottom: map-get($gutter, md);
+  z-index: 1000;
+  display: none;
+  padding: 24px 12px 12px 12px;
+  width: 154px;
+  background-color: #fff;
+  line-height: 1.1;
+  border: solid 1px $color-neutral-4;
+
+  @include break(md) {
+    display: block;
+  }
+}
+
+.carbon-wrap {
+  display: block;
+  margin: 0 0 4px 0;
+}
+
+.carbon-img {
+  display: block;
+  margin: 0 0 4px 0;
+  padding: 0;
+  width: 130px;
+  height: 100px;
+}
+
+.carbon-text {
+  color: $color-neutral-3;
+  font-size: 11px;
+}
+
+.carbon-poweredby {
+  font-size: 9px;
+}
+
+.carbonad__close {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  height: 12px;
+  font-size: 10px;
+  line-height: 12px;
+}

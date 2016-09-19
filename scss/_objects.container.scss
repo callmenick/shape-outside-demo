@@ -1,0 +1,19 @@
+/* -----------------------------------------------------------------------------
+
+  Objects - Container
+
+----------------------------------------------------------------------------- */
+
+.Container {
+  margin: 0 auto;
+  padding: 0 map-get($gutter, lg);
+  max-width: 96rem;
+
+  @include break(sm) {
+    padding: 0 map-get($gutter, xl);
+  }
+
+  @include break(md) {
+    padding: 0 map-get($gutter, xx);
+  }
+}
